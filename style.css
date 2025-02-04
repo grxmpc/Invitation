@@ -2,8 +2,8 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to top, #ff69b4, #ffffff); /* HotPink to White */
-    overflow: hidden; /* Prevent scrolling due to sakura petals */
+    background: linear-gradient(to top, #ff69b4, #ffffff);
+    overflow: hidden; 
 }
 
 header {
@@ -48,7 +48,7 @@ h3 {
 }
 
 .green {
-    color: #008000; /* Green color */
+    color: #008000; 
     font-weight : bold;
 }
 
@@ -64,7 +64,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;  /* Centers the list items horizontally */
+    justify-content: center;  
 }
 
 nav ul li {
@@ -97,45 +97,45 @@ main img {
 
 button {
     display: inline-block;
-    margin: 40px 20px; /* Adds horizontal spacing */
-    padding: 12px 24px; /* Wide padding */
+    margin: 40px 20px; 
+    padding: 12px 24px; 
     border: none;
-    border-radius: 20px; /* Rounded border */
+    border-radius: 20px; 
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 button:first-of-type {
-    background-color: maroon; /* Green color */
+    background-color: maroon; 
     color: white;
-    padding: 15px 30px; /* Increases the padding for larger button */
-    font-size: 20px; /* Makes the text larger */
-    border-radius: 30px; /* Adds rounded corners, optional */
+    padding: 15px 30px; 
+    font-size: 20px; 
+    border-radius: 30px; 
 }
 
 button:first-of-type:hover {
-    background-color: rgb(83, 1, 1); /* Darker green on hover */
+    background-color: rgb(83, 1, 1); 
 }
 
 button:last-of-type {
-    background-color: #ccc; /* Gray color for disabled button */
+    background-color: #ccc;
     color: #666;
     cursor: not-allowed;
     position: relative;
 }
 
 button:last-of-type:hover::after {
-    content: ""; /* No text content */
+    content: ""; 
     position: absolute;
     top: -130px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('img/sus.png'); /* Set your image URL here */
-    background-size: cover; /* Make the image cover the entire pseudo-element */
-    background-position: center; /* Center the image */
-    width: 300px; /* Set the width of the pseudo-element */
-    height: 250px; /* Set the height of the pseudo-element */
+    background-image: url('img/sus.png'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 300px; 
+    height: 250px; 
     border-radius: 5px;
     font-size: 12px;
     white-space: nowrap;
@@ -145,15 +145,15 @@ button:last-of-type:hover::after {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 500px; /* You can adjust the width */
+    width: 500px; 
     height: auto;
 }
 
 .bottom-left-img {
     position: fixed;
-    bottom: 10vh; /* Adjusts based on viewport height */
-    left: 10vw;   /* Adjusts based on viewport width */
-    width: 300px;  /* Adjusts width relative to viewport width */
+    bottom: 10vh; 
+    left: 10vw;  
+    width: 300px; 
     height: auto;
     z-index: 10;
 }
@@ -168,3 +168,31 @@ button:last-of-type:hover::after {
     letter-spacing: 3px;
     color: maroon;
 }
+
+span {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #800000; 
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: pulse 1.5s infinite;
+    border: 2px solid #b22222; 
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
